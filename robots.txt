@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap website produksi.
+Sitemap: https://www.tokojasagordyn.my.id/sitemap.xml
