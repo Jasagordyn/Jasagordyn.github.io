@@ -4,11 +4,20 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+    <!-- Halaman Utama (single-page: berisi Beranda, Fitur, Tentang, Layanan, Galeri) -->
     <url>
         <loc>https://www.tokojasagordyn.my.id/</loc>
         <lastmod>2026-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+
+    <!-- Halaman utama juga dapat diakses via index.html -->
+    <url>
+        <loc>https://www.tokojasagordyn.my.id/index.html</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
 
 </urlset>
