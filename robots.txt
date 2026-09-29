@@ -1,0 +1,43 @@
+# robots.txt untuk https://www.tokojasagordyn.my.id/
+# Website: Jasa Gordyn, Gorden & Blinds Bandung
+# Terakhir diperbarui: 2026-09-29
+
+# Izinkan semua crawler mengindeks seluruh website
+User-agent: *
+Allow: /
+
+# Blokir file/folder sensitif (jika ada di server)
+Disallow: /cgi-bin/
+Disallow: /.env
+Disallow: /config.php
+Disallow: /wp-config.php
+Disallow: /backup/
+
+# Blokir parameter URL yang tidak perlu diindeks
+Disallow: /*?s=
+Disallow: /*?orderby=
+Disallow: /*?filter=
+
+# Izinkan Googlebot membaca aset statis (CSS/JS/gambar) untuk rendering
+User-agent: Googlebot
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpeg$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Batasi crawl bot SEO pihak ketiga agar tidak membebani server
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Lokasi sitemap resmi
+Sitemap: https://www.tokojasagordyn.my.id/sitemap.xml
